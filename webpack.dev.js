@@ -6,6 +6,7 @@ module.exports = merge(common, {
   devtool: "inline-source-map",
   devServer: {
     publicPath: "/dist/",
-    contentBase: path.resolve(__dirname, "examples")
+    contentBase: path.resolve(__dirname, "examples"),
+    disableHostCheck: true
   }
 });

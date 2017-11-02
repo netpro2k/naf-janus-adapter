@@ -7,7 +7,8 @@
 
   <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
   <!-- Tempoary custom version that includes NAF.adapters.register() -->
-  <script src="https://rawgit.com/netpro2k/networked-aframe/feature/register-adapter/dist/networked-aframe.js"></script>
+  <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+  <script src="https://rawgit.com/netpro2k/networked-aframe/bugfix/chrome/audio/dist/networked-aframe.js"></script>
   <script src="/dist/naf-janus-adapter.js"></script>
 
   <script src="https://unpkg.com/aframe-randomizer-components@^3.0.1/dist/aframe-randomizer-components.min.js"></script>
@@ -38,14 +39,14 @@
   <a-scene networked-scene="
         room: 1;
         audio: true;
-        debug: true;
+        debug: false;
         adapter: janus;
         serverURL: wss://quander.me:8989;
       ">
     <a-assets>
 
       <img id="grid" src="https://img.gs/bbdkhfbzkk/stretch/https://i.imgur.com/25P1geh.png" crossorigin="anonymous">
-      <img id="sky" src="http://i.imgur.com/WqlqEkq.jpg" crossorigin="anonymous" />
+      <img id="sky" src="https://i.imgur.com/WqlqEkq.jpg" crossorigin="anonymous" />
 
       <!-- Templates -->
 
